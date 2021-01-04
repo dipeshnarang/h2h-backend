@@ -1,6 +1,7 @@
 # h2h-backend
-Install mongodb and start it on port 27017
-In databaseConnection/mongoose.js replace MONGODB_URL_PROD with local database url (basic url: 'mongodb://127.0.0.1:27017/H2H')
+Steps to run this project
+Install mongodb and start it on port 27017.   
+In databaseConnection/mongoose.js replace MONGODB_URL_PROD with local database url (basic url: 'mongodb://127.0.0.1:27017/H2H').    
 In index.js- Set the value of the const Port=3000 (app will run port 3000)
 create an AWS account.
 create a S3 aws public bucket with with desired name.
