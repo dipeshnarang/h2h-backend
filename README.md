@@ -6,4 +6,4 @@ create an AWS account.
 create a S3 aws public bucket with with desired name.
 create a key pair in aws(can be created in security credentials tab)
 In services/file-upload.js set all the attributes that include- AccessKeyId, SecretKey, Region, Bucket
-to start the script: npm start
+To start the script: npm start
