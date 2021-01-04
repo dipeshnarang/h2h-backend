@@ -14,7 +14,7 @@ var s3 = new aws.S3()
 var upload = multer({
   storage: multerS3({
     s3: s3,
-    bucket: 'h2h-uiet',
+    bucket: process.env.BUCKET,
     acl:'public-read',
     metadata: function (req, file, cb) {
         
