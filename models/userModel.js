@@ -1,4 +1,5 @@
 const mongoose=require('mongoose')
+const Book=require('./bookModel')
 
 const userSchema=new mongoose.Schema({
     userId:{
@@ -15,7 +16,8 @@ const userSchema=new mongoose.Schema({
     },
     wishlist:[{
         item:{
-            type:mongoose.Types.ObjectId
+            type:mongoose.Types.ObjectId,
+            ref:'Book'
         }
     }]
 })

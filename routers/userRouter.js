@@ -75,4 +75,16 @@ router.post('/deleteItemWishlist',async(req,res)=>{
 
 })
 
+router.get('/getWishlist',async(req,res)=>{
+    const userId=req.query.userId
+    try{
+        const user=await User.findOne({userId:userId}).populate('wishlist.item').exec()
+        res.send(user)
+    }catch(e){
+        res.send(e)
+    }
+})
+
+
+
 module.exports=router
